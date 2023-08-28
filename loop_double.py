@@ -1,3 +1,4 @@
+'''
 nums = [1, 3, 6, 10, 15, 21]
 
 idx = 0
@@ -6,6 +7,8 @@ while idx < len(nums):
     num = nums[idx]
     print(num * num)
     idx += 1
+'''
+
 
 
 '''
@@ -18,3 +21,9 @@ for num in float_list:  # Iterator traverses to the last index of the list
 
 print(count_greater)
 '''
+
+string_list = ["Anakin", "Luke", "Rey", "Leia", "Vader"]
+for s in string_list:
+    if len(s) < 5:
+        #print(len(s))
+        print(s)
