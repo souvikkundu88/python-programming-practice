@@ -38,9 +38,6 @@ def check_balance(brackets):
         elif bracket == ']':
             check -= 1
 
-        if check < 0:
-            break
-
     return check == 0
 
 
