@@ -21,9 +21,29 @@ for num in float_list:  # Iterator traverses to the last index of the list
 
 print(count_greater)
 '''
-
+'''
 string_list = ["Anakin", "Luke", "Rey", "Leia", "Vader"]
 for s in string_list:
     if len(s) < 5:
         #print(len(s))
         print(s)
+'''
+
+def check_balance(brackets):
+    check = 0
+    for bracket in brackets:
+        if bracket == '[':
+            check += 1
+
+        elif bracket == ']':
+            check -= 1
+
+        if check < 0:
+            break
+
+    return check == 0
+
+
+bracket_string = '[[[[]]'
+
+print(check_balance(bracket_string))
